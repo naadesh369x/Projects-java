@@ -1,0 +1,74 @@
+package com.example.demo.models;
+
+public class Admin {
+    private String title;
+    private String location;
+    private int radius;
+    private String type;
+    private String description;
+
+
+    public Admin(String title,String location, int radius, String type, String description) {
+        this.title = title;
+        this.location = location;
+        this.radius = radius;
+        this.type = type;
+        this.description = description;
+    }
+
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public int getRadius() {
+        return radius;
+    }
+
+    public void setRadius(int radius) {
+        this.radius = radius;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+
+    public void displayDetails() {
+        System.out.println("Title: " + title);
+        System.out.println("Location: " + location);
+        System.out.println("Radius: " + radius);
+        System.out.println("Type: " + type);
+        System.out.println("Description: " + description);
+    }
+
+
+    @Override
+    public String toString() {
+        return title + ", " + location + ", " + radius + ", " + type + ", " + description;
+    }
+}
